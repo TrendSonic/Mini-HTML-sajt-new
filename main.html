@@ -2,27 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+   
+    <title>Home Page</title>
+    <script src="https://kit.fontawesome.com/77902e8568.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-    <title>Mihajlo Idvorski Pupin-Biografija</title>
-</head>
-<body>
-    <a href="main.html">Main Page</a> <br>
-    <a href="work.html">Work</a> <br>
-    <a href="lifeandeducation.html">Life and education</a> <br>
-    <a href="coils.html">Pupin Coils</a>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Josefin Sans' , sans-serif;
+    }
+    body {
+        background: rgb(243, 245, 249);
+    }
 
-    <hr>
+    .wrapper {
+        display: flex;
+        position: relative;
 
-    <h1><center>Mihajlo Idvorski Pupin</center></h1>
+    }
+
+    .wrapper .sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        background: #4b4276;
+        padding: 30px 0;
+
+    }
+
+    .wrapper .sidebar h2 {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .wrapper .sidebar ul li {
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        border-top: 1px solid rgba(225,225,225,0.05);
+
+    }
     
-<p><b>Mihajlo Idvorski Pupin, Ph.D., LL.D. (Serbian Cyrillic: Михајло Идворски Пупин; 9 October 1858 – 12 March 1935), also known as Michael I.</b></p> 
+    .wrapper .sidebar ul li a {
+        color: #bdb8d7;
+        display: block;
 
-<img src="pupin.jpg" alt="Pupin image">
+    }
 
-<p>Pupin, was a Serbian American physicist and physical chemist.</p> 
+    .wrapper .sidebar ul li a .fas {
+        width: 25px;
+    }
 
-<p>Pupin is best known for his numerous patents, including a means of greatly extending the range of long-distance telephone communication by placing loading coils (of wire) at predetermined intervals along the transmitting wire (known as "pupinization"). 
+    .wrapper .sidebar ul li:hover {
+        background: #594f8d;
+    }
 
-Pupin was a founding member of National Advisory Committee for Aeronautics (NACA) on March 3, 1915, which later became NASA.</p>
+    .wrapper .sidebar ul li:hover a {
+        color: #fff;
+    }
+    
+    .wrapper .main_content  {
+        width: 100%;
+        margin-left: 200px;
+        
+    }
+     
+    .wrapper .main_content .header {
+        padding: 20px;
+        background: #fff;
+        color: #717171;
+        border-bottom: 1px solid #e0e4e8;
+        text-align: center;
+        
+        
+
+    }
+
+    .wrapper .main_content .info {
+        margin: 20px;
+        color: #717171;
+        line-height: 20px;
+    }
+
+    .wrapper .main_content .info div {
+        margin-bottom: 20px;
+
+    }
+
+    .wrapper .main_content .image {
+        text-align: center;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="main.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="work.html"><i class="fas fa-briefcase"></i>Work</a></li>
+                <li><a href="lifeandeducation.html"><i class="fas fa-university"></i>Education</a></li>
+                <li><a href="coils.html"><i class="fas fa-hammer"></i>Coils</a></li>
+            </ul>
+        </div>
+   
+
+    <div class="main_content">
+        <div class="header">Mihajlo Idvorski Pupin</div>
+        <div class="info">
+            <div class="image">
+                <img src="pupin.jpg" alt="Pupin image">
+            </div>
+
+            <div>
+                Mihajlo Idvorski Pupin, Ph.D., LL.D. (Serbian Cyrillic: Михајло Идворски Пупин; 9 October 1858 – 12 March 1935), also known as Michael I.
+            
+            
+                Pupin, was a Serbian American physicist and physical chemist.
+                Pupin is best known for his numerous patents, including a means of greatly extending the range of long-distance telephone communication by placing loading coils (of wire) at predetermined intervals along the transmitting wire (known as "pupinization"). 
+                Pupin was a founding member of National Advisory Committee for Aeronautics (NACA) on March 3, 1915, which later became NASA.
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
 </body>
 </html>
